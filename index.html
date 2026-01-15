@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore with Uttam - Premier India Tour Packages</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+        }
+        .hero-section {
+            background-image: linear-gradient(to right, rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.5)), url('https://placehold.co/1600x900/000000/FFFFFF?text=Incredible+India');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #fb923c, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+        .package-card-image {
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                Explore <span class="gradient-text">with Uttam</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-orange-600 transition-colors">Home</a>
+                <a href="#packages" class="text-gray-600 hover:text-orange-600 transition-colors">Packages</a>
+                <a href="#about" class="text-gray-600 hover:text-orange-600 transition-colors">Why Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-orange-600 transition-colors">Contact</a>
+            </div>
+            <a href="#packages" class="hidden lg:block bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-orange-600 transition-colors shadow">Explore Tours</a>
+            <button id="mobile-menu-button" class="lg:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-800"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-orange-600">Home</a>
+            <a href="#packages" class="block py-2 text-gray-600 hover:text-orange-600">Packages</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-orange-600">Why Us</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-orange-600">Contact</a>
+            <a href="#packages" class="block mt-2 bg-orange-500 text-white font-semibold px-5 py-2 rounded-lg text-center hover:bg-orange-600 transition-colors">Explore Tours</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center text-white p-4 max-w-4xl mx-auto">
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">Incredible India, Unforgettable Journeys</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">Crafting bespoke travel experiences across the vibrant landscapes of India, from the Himalayas to the backwaters.</p>
+            <a href="#packages" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Discover Our Packages
+            </a>
+        </div>
+    </section>
+
+    <!-- All India Packages Section -->
+    <section id="packages" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800">Top India Tour Packages</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Handcrafted itineraries to showcase the best of India's culture, heritage, and natural beauty.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Package Card 1: Golden Triangle -->
+                <div class="card-hover-effect bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/400x250/f59e0b/FFFFFF?text=Golden+Triangle" alt="Golden Triangle" class="package-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">The Golden Triangle</h3>
+                        <p class="text-gray-600 mb-4">Discover Delhi, Agra, and Jaipur. The perfect introduction to India's rich history.</p>
+                        <div class="mt-auto">
+                           <div class="flex justify-between items-center mb-4 font-medium">
+                               <span><i data-lucide="clock" class="inline w-4 h-4 mr-1"></i> 7 Days / 6 Nights</span>
+                               <span class="text-xl font-bold text-orange-600">from ₹35,000</span>
+                           </div>
+                           <a href="#" class="block w-full text-center bg-orange-100 text-orange-700 font-semibold py-2 rounded-lg hover:bg-orange-200 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 2: Himalayan Adventure -->
+                <div class="card-hover-effect bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/400x250/3b82f6/FFFFFF?text=Himalayas" alt="Himalayan Adventure" class="package-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Himalayan Adventure</h3>
+                        <p class="text-gray-600 mb-4">Trek through breathtaking landscapes in Himachal or Uttarakhand.</p>
+                        <div class="mt-auto">
+                           <div class="flex justify-between items-center mb-4 font-medium">
+                               <span><i data-lucide="clock" class="inline w-4 h-4 mr-1"></i> 10 Days / 9 Nights</span>
+                               <span class="text-xl font-bold text-orange-600">from ₹48,000</span>
+                           </div>
+                           <a href="#" class="block w-full text-center bg-orange-100 text-orange-700 font-semibold py-2 rounded-lg hover:bg-orange-200 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 3: Kerala's Serenity -->
+                <div class="card-hover-effect bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/400x250/10b981/FFFFFF?text=Kerala" alt="Kerala's Serenity" class="package-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Kerala's Serenity</h3>
+                        <p class="text-gray-600 mb-4">Relax in the tranquil backwaters, lush tea gardens, and pristine beaches.</p>
+                        <div class="mt-auto">
+                           <div class="flex justify-between items-center mb-4 font-medium">
+                               <span><i data-lucide="clock" class="inline w-4 h-4 mr-1"></i> 8 Days / 7 Nights</span>
+                               <span class="text-xl font-bold text-orange-600">from ₹42,000</span>
+                           </div>
+                           <a href="#" class="block w-full text-center bg-orange-100 text-orange-700 font-semibold py-2 rounded-lg hover:bg-orange-200 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 4: Royal Rajasthan -->
+                <div class="card-hover-effect bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/400x250/8b5cf6/FFFFFF?text=Rajasthan" alt="Royal Rajasthan" class="package-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Royal Rajasthan</h3>
+                        <p class="text-gray-600 mb-4">Experience the land of kings, majestic forts, palaces, and deserts.</p>
+                        <div class="mt-auto">
+                           <div class="flex justify-between items-center mb-4 font-medium">
+                               <span><i data-lucide="clock" class="inline w-4 h-4 mr-1"></i> 12 Days / 11 Nights</span>
+                               <span class="text-xl font-bold text-orange-600">from ₹65,000</span>
+                           </div>
+                           <a href="#" class="block w-full text-center bg-orange-100 text-orange-700 font-semibold py-2 rounded-lg hover:bg-orange-200 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 5: Spiritual Varanasi -->
+                <div class="card-hover-effect bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/400x250/ef4444/FFFFFF?text=Varanasi" alt="Spiritual Varanasi" class="package-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Spiritual Varanasi & Beyond</h3>
+                        <p class="text-gray-600 mb-4">Immerse yourself in the spiritual heart of India along the holy Ganges.</p>
+                        <div class="mt-auto">
+                           <div class="flex justify-between items-center mb-4 font-medium">
+                               <span><i data-lucide="clock" class="inline w-4 h-4 mr-1"></i> 5 Days / 4 Nights</span>
+                               <span class="text-xl font-bold text-orange-600">from ₹28,000</span>
+                           </div>
+                           <a href="#" class="block w-full text-center bg-orange-100 text-orange-700 font-semibold py-2 rounded-lg hover:bg-orange-200 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package Card 6: Goan Beaches -->
+                <div class="card-hover-effect bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/400x250/34d399/FFFFFF?text=Goa" alt="Goan Beaches" class="package-card-image">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Beaches of Goa</h3>
+                        <p class="text-gray-600 mb-4">Sun, sand, and sea. Relax and rejuvenate on India's famous coastline.</p>
+                        <div class="mt-auto">
+                           <div class="flex justify-between items-center mb-4 font-medium">
+                               <span><i data-lucide="clock" class="inline w-4 h-4 mr-1"></i> 6 Days / 5 Nights</span>
+                               <span class="text-xl font-bold text-orange-600">from ₹30,000</span>
+                           </div>
+                           <a href="#" class="block w-full text-center bg-orange-100 text-orange-700 font-semibold py-2 rounded-lg hover:bg-orange-200 transition-colors">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800">Why Travel With Us?</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Your journey is our passion. We ensure a seamless, authentic, and enriching travel experience.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Expert Local Guides</h3>
+                    <p class="mt-2 text-gray-600">Discover hidden gems with our knowledgeable and friendly local guides.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                        <i data-lucide="file-check-2" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Tailor-Made Trips</h3>
+                    <p class="mt-2 text-gray-600">We craft trips perfectly suited to your interests, budget, and style.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                        <i data-lucide="shield-check" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Safety & Comfort</h3>
+                    <p class="mt-2 text-gray-600">Your safety is our top priority. We ensure comfortable stays and transport.</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-center h-20 w-20 rounded-full bg-orange-100 text-orange-600 mx-auto mb-4">
+                        <i data-lucide="heart-handshake" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">24/7 Support</h3>
+                    <p class="mt-2 text-gray-600">Our team is always available to assist you at every step of your journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h3 class="text-2xl font-bold">Explore with Uttam</h3>
+                    <p class="mt-4 text-gray-400">Crafting your next unforgettable journey across India. Based in Mumbai.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#packages" class="text-gray-400 hover:text-white transition-colors">Packages</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Why Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold">Contact Us</h4>
+                    <ul class="mt-4 space-y-3 text-gray-400">
+                        <li class="flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-orange-400"></i>Mumbai, Maharashtra, India</li>
+                        <li class="flex items-center"><i data-lucide="phone" class="w-5 h-5 mr-3 text-orange-400"></i>+91 98765 43210</li>
+                        <li class="flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3 text-orange-400"></i>contact@explorewithuttam.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold">Follow Us</h4>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Explore with Uttam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Add shadow to header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
+
